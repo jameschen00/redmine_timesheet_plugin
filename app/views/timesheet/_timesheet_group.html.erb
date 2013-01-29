@@ -1,0 +1,18 @@
+<table class="list issues">
+  <thead>
+  <tr>
+    <th width="8%"><%= l(:label_date) %></th>
+    <th width="10%"><%= l(:label_member) %></th>
+    <th width="15%"><%= l(:label_activity) %></th>
+    <th width="15%"><%= l(:label_project) %></th>
+    <th width="10%"><%= l(:label_issue) %></th>
+    <th width="25%"><%= l(:field_comments) %></th>
+    <th width="10%"><%= l(:field_hours) %></th>
+    <th></th>
+   </tr>
+  </thead>
+  <tbody>
+    <%= render :partial => "time_entry", :collection => entry[:logs] %>
+  </tbody>
+</table>
+<br />
